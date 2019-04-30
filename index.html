@@ -1,17 +1,47 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-        <head>
-                <title>Personal page of Artem Asinov</title>
-            </head>
-            <body style="margin: 0px">
-                <div id="clouds"></div>
-            
-                <script src="Scripts/three.r92.min.js" ></script>
-                <script src="Scripts/vanta.clouds.min.js" ></script>
-                <script>
-                    VANTA.CLOUDS({
-                        el: "#clouds"
-                    })
-                </script>
-            </body>
+	<head>
+		<title>Artem Asinov personal page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>Artem Asinov</h1>
+							<p>Senior Software Developer</p>
+						</header>
+						<footer>
+							<ul class="icons">
+								<li><a href="https://t.me/asinov" class="fa-telegram">Telegram</a></li>
+								<li><a href="https://www.linkedin.com/in/asinov/" class="fa-linkedin">Linkedin</a></li>
+								<li><a href="https://join.skype.com/invite/onc1iqkaigmJ" class="fa-skype">Skype</a></li>								
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						&copy; Artem Asinov
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
 </html>
